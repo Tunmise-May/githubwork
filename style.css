@@ -175,7 +175,7 @@ main:focus {
 
 .site_header_nav ul li a {
   text-decoration: none;
-  color: #fff;
+  color: #f2cf4ea4;
 }
 .hero_content {
   padding: var(--space-3xl) 0;
@@ -192,4 +192,97 @@ main:focus {
 /* General styling for the hero section */
 section {
   padding: var(--space-2xl) var(--space-l);
+}
+section#hero {
+  background: linear-gradient(rgba(244, 222, 126, 0.9), rgba(244, 165, 237, 0.9)),
+url(asset/Untitled\ design.png);
+  padding-bottom: 4px;
+  background-size: cover;
+  background-position: top;
+  background-attachment: scroll;
+  color: #fafafa;
+  --color-accent: #8a2be2;
+}
+.about_content {
+  padding: var(--space-xl) 0;
+  transform: skewX(-10deg);
+}
+
+@media (max-width: 468px) {
+  .about_content {
+    transform: skewX(0deg);
+  }
+}
+
+.about_figure {
+  padding: var(--space-xl) 0;
+  box-shadow: 0 4px 6px rgba(168, 117, 176, 0.894);
+  border: 2px solid #efd887b1;
+  display: inline-block;
+  padding: 5px;
+}
+
+.about_img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.about_caption {
+  padding: var(--space-3xs) 0;
+}
+
+section#about {
+  background-color: #ebe0c69f;
+  color: #755858;
+  --color-accent: #ffae00;
+}
+/* contact section */
+.contact_form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form_group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
+
+textarea {
+  resize: vertical;
+  height: 150px;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+/* footer section */
+section#footer {
+  padding: var(--space-l) var(--space-l);
 }
